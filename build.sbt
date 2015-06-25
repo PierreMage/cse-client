@@ -12,6 +12,6 @@ scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
 
 libraryDependencies ++= {
   Seq(
-    "com.ning" % "async-http-client" % "1.9.6"
+    "org.scalaj" %% "scalaj-http" % "1.1.4"
   )
 }
