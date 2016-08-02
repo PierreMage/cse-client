@@ -4,14 +4,10 @@ organization := "com.github.pierremage"
 
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.8"
 
-crossScalaVersions := Seq("2.11.6", "2.10.4")
+crossScalaVersions := Seq(scalaVersion.value, "2.10.6")
 
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
 
-libraryDependencies ++= {
-  Seq(
-    "org.scalaj" %% "scalaj-http" % "1.1.4"
-  )
-}
+libraryDependencies += "org.scalaj" %% "scalaj-http" % "2.3.0"
